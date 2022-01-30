@@ -16,12 +16,10 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<App />}/>
           <Route index element={<Landing />}/> 
           <Route path="app" element={<OrphanagesMap />}/>
           <Route path="orphanages/create" element={<CreateOrphanage />}/>
           <Route path="orphanages/:id" element={<Orphanage />}/>
-
         </Routes>
       </Router>
   );
